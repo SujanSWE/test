@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rentify - Where Renting Meets Simplicity</h1>
+
+  <!-- Registration Form -->
+  <div id="register">
+    <h2>Register</h2>
+    <form id="register-form">
+      <input type="text" id="first-name" placeholder="First Name" required>
+      <input type="text" id="last-name" placeholder="Last Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <!-- Post Property Form -->
+  <div id="post-property">
+    <h2>Post Property</h2>
+    <form id="property-form">
+      <input type="text" id="place" placeholder="Place" required>
+      <input type="number" id="area" placeholder="Area (sq ft)" required>
+      <input type="number" id="bedrooms" placeholder="Bedrooms" required>
+      <input type="number" id="bathrooms" placeholder="Bathrooms" required>
+      <input type="text" id="nearby" placeholder="Nearby (Hospitals, Colleges, etc.)" required>
+      <input type="hidden" id="seller-email" value="seller@example.com">
+      <button type="submit">Post Property</button>
+    </form>
+  </div>
+
+  <!-- Properties List -->
+  <div id="properties">
+    <h2>Available Properties</h2>
+    <div id="properties-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
